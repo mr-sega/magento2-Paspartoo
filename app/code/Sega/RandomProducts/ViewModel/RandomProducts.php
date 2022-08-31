@@ -10,11 +10,6 @@ class RandomProducts implements ArgumentInterface
 {
     private $productCollection;
 
-    public function getCacheLifetime()
-    {
-        return false;
-    }
-
     public function __construct(Collection $productCollection)
     {
         $this->productCollection = $productCollection;
